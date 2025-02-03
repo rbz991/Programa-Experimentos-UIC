@@ -28,5 +28,5 @@ Module Module1
     Public vIndexCS As Byte = 0
     Public vUniqSec As Integer = 0
     Public RF_criterio As Integer = 0
-    Public RF_contador As Integer = 0
+    Public RF_contador(4) As Integer
 End Module

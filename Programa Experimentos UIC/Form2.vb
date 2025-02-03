@@ -70,32 +70,32 @@ Public Class Form2
                 If vRefReady = True And Lever = 4 Then Reinforce()
 
 
-            ElseIf Form1.rdoFase1RFDer.Checked = True Then
-                RegisterResponse(Lever)
-                RF_contador += 1
-                If RF_contador = RF_criterio And Lever = 1 Then
-                    RF_contador = 0
-                    Reinforce()
-                End If
             ElseIf Form1.rdoFase1RFIzq.Checked = True Then
                 RegisterResponse(Lever)
-                RF_contador += 1
-                If RF_contador = RF_criterio And Lever = 2 Then
-                    RF_contador = 0
+                RF_contador(Lever) += 1
+                If RF_contador(Lever) >= RF_criterio And Lever = 1 Then
+                    RF_contador(Lever) = 0
                     Reinforce()
                 End If
-            ElseIf Form1.rdoFase2RFDer.Checked = True Then
+            ElseIf Form1.rdoFase1RFDer.Checked = True Then
                 RegisterResponse(Lever)
-                RF_contador += 1
-                If RF_contador = RF_criterio And Lever = 3 Then
-                    RF_contador = 0
+                RF_contador(Lever) += 1
+                If RF_contador(Lever) >= RF_criterio And Lever = 2 Then
+                    RF_contador(Lever) = 0
                     Reinforce()
                 End If
             ElseIf Form1.rdoFase2RFIzq.Checked = True Then
                 RegisterResponse(Lever)
-                RF_contador += 1
-                If RF_contador = RF_criterio And Lever = 4 Then
-                    RF_contador = 0
+                RF_contador(Lever) += 1
+                If RF_contador(Lever) >= RF_criterio And Lever = 3 Then
+                    RF_contador(Lever) = 0
+                    Reinforce()
+                End If
+            ElseIf Form1.rdoFase2RFDer.Checked = True Then
+                RegisterResponse(Lever)
+                RF_contador(Lever) += 1
+                If RF_contador(Lever) >= RF_criterio And Lever = 4 Then
+                    RF_contador(Lever) = 0
                     Reinforce()
                 End If
 
