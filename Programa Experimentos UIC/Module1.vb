@@ -1,7 +1,7 @@
 ﻿Imports System.IO.Ports
 Imports System.Linq
 Module Module1
-    Public vPhase As Integer
+    Public vPhase As String
     Public Comunication_Port_X As String
     Public Arduino As SerialPort
     Public Arduino_String As String = ""
@@ -27,4 +27,6 @@ Module Module1
     Public vCurrentSeq As String = ""
     Public vIndexCS As Byte = 0
     Public vUniqSec As Integer = 0
+    Public RF_criterio As Integer = 0
+    Public RF_contador As Integer = 0
 End Module

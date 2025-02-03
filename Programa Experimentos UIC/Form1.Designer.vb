@@ -46,15 +46,19 @@ Partial Class Form1
         Me.txtRatY = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.rdoLiquor = New System.Windows.Forms.RadioButton()
-        Me.rdoPelleta = New System.Windows.Forms.RadioButton()
         Me.rdoLechita = New System.Windows.Forms.RadioButton()
+        Me.rdoPelleta = New System.Windows.Forms.RadioButton()
+        Me.rdoLiquor = New System.Windows.Forms.RadioButton()
+        Me.rdoFase2RFIzq = New System.Windows.Forms.RadioButton()
+        Me.rdoFase2RFDer = New System.Windows.Forms.RadioButton()
+        Me.rdoFase1RFDer = New System.Windows.Forms.RadioButton()
+        Me.rdoFase1RFIzq = New System.Windows.Forms.RadioButton()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(447, 277)
+        Me.Button1.Location = New System.Drawing.Point(695, 270)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(310, 92)
@@ -65,7 +69,7 @@ Partial Class Form1
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(538, 49)
+        Me.Label6.Location = New System.Drawing.Point(786, 42)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(45, 20)
@@ -74,7 +78,7 @@ Partial Class Form1
         '
         'txtCOM
         '
-        Me.txtCOM.Location = New System.Drawing.Point(591, 45)
+        Me.txtCOM.Location = New System.Drawing.Point(839, 38)
         Me.txtCOM.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtCOM.Name = "txtCOM"
         Me.txtCOM.Size = New System.Drawing.Size(82, 26)
@@ -84,7 +88,7 @@ Partial Class Form1
         'Secuencia
         '
         Me.Secuencia.AutoSize = True
-        Me.Secuencia.Location = New System.Drawing.Point(712, 46)
+        Me.Secuencia.Location = New System.Drawing.Point(960, 39)
         Me.Secuencia.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Secuencia.Name = "Secuencia"
         Me.Secuencia.Size = New System.Drawing.Size(84, 20)
@@ -93,7 +97,7 @@ Partial Class Form1
         '
         'txtValorSecuencia
         '
-        Me.txtValorSecuencia.Location = New System.Drawing.Point(806, 45)
+        Me.txtValorSecuencia.Location = New System.Drawing.Point(1054, 38)
         Me.txtValorSecuencia.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtValorSecuencia.Name = "txtValorSecuencia"
         Me.txtValorSecuencia.Size = New System.Drawing.Size(64, 26)
@@ -103,7 +107,7 @@ Partial Class Form1
         'rdoFase1IVIzq
         '
         Me.rdoFase1IVIzq.AutoSize = True
-        Me.rdoFase1IVIzq.Location = New System.Drawing.Point(44, 155)
+        Me.rdoFase1IVIzq.Location = New System.Drawing.Point(160, 155)
         Me.rdoFase1IVIzq.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.rdoFase1IVIzq.Name = "rdoFase1IVIzq"
         Me.rdoFase1IVIzq.Size = New System.Drawing.Size(129, 24)
@@ -126,7 +130,7 @@ Partial Class Form1
         '
         'txtSesion
         '
-        Me.txtSesion.Location = New System.Drawing.Point(430, 45)
+        Me.txtSesion.Location = New System.Drawing.Point(678, 38)
         Me.txtSesion.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtSesion.Name = "txtSesion"
         Me.txtSesion.Size = New System.Drawing.Size(86, 26)
@@ -134,7 +138,7 @@ Partial Class Form1
         '
         'txtRat
         '
-        Me.txtRat.Location = New System.Drawing.Point(160, 45)
+        Me.txtRat.Location = New System.Drawing.Point(408, 38)
         Me.txtRat.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtRat.Name = "txtRat"
         Me.txtRat.Size = New System.Drawing.Size(148, 26)
@@ -144,7 +148,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(363, 46)
+        Me.Label2.Location = New System.Drawing.Point(611, 39)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(58, 20)
@@ -154,7 +158,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(38, 48)
+        Me.Label1.Location = New System.Drawing.Point(286, 41)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(113, 20)
@@ -163,7 +167,7 @@ Partial Class Form1
         '
         'txbVIValue
         '
-        Me.txbVIValue.Location = New System.Drawing.Point(333, 122)
+        Me.txbVIValue.Location = New System.Drawing.Point(581, 115)
         Me.txbVIValue.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txbVIValue.Name = "txbVIValue"
         Me.txbVIValue.Size = New System.Drawing.Size(148, 26)
@@ -172,17 +176,17 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(260, 125)
+        Me.Label3.Location = New System.Drawing.Point(480, 121)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(66, 20)
+        Me.Label3.Size = New System.Drawing.Size(92, 20)
         Me.Label3.TabIndex = 31
-        Me.Label3.Text = "Valor IV"
+        Me.Label3.Text = "Valor IV/RF"
         '
         'rdoFase1IVDer
         '
         Me.rdoFase1IVDer.AutoSize = True
-        Me.rdoFase1IVDer.Location = New System.Drawing.Point(44, 189)
+        Me.rdoFase1IVDer.Location = New System.Drawing.Point(160, 189)
         Me.rdoFase1IVDer.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.rdoFase1IVDer.Name = "rdoFase1IVDer"
         Me.rdoFase1IVDer.Size = New System.Drawing.Size(133, 24)
@@ -194,7 +198,7 @@ Partial Class Form1
         'rdoFase2IVDer
         '
         Me.rdoFase2IVDer.AutoSize = True
-        Me.rdoFase2IVDer.Location = New System.Drawing.Point(44, 223)
+        Me.rdoFase2IVDer.Location = New System.Drawing.Point(160, 223)
         Me.rdoFase2IVDer.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.rdoFase2IVDer.Name = "rdoFase2IVDer"
         Me.rdoFase2IVDer.Size = New System.Drawing.Size(133, 24)
@@ -206,7 +210,7 @@ Partial Class Form1
         'rdoFase2IVIzq
         '
         Me.rdoFase2IVIzq.AutoSize = True
-        Me.rdoFase2IVIzq.Location = New System.Drawing.Point(44, 257)
+        Me.rdoFase2IVIzq.Location = New System.Drawing.Point(160, 257)
         Me.rdoFase2IVIzq.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.rdoFase2IVIzq.Name = "rdoFase2IVIzq"
         Me.rdoFase2IVIzq.Size = New System.Drawing.Size(129, 24)
@@ -254,7 +258,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(578, 125)
+        Me.Label4.Location = New System.Drawing.Point(826, 118)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(36, 20)
@@ -264,7 +268,7 @@ Partial Class Form1
         'txtLag
         '
         Me.txtLag.Enabled = False
-        Me.txtLag.Location = New System.Drawing.Point(621, 118)
+        Me.txtLag.Location = New System.Drawing.Point(869, 111)
         Me.txtLag.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtLag.Name = "txtLag"
         Me.txtLag.Size = New System.Drawing.Size(148, 26)
@@ -274,7 +278,7 @@ Partial Class Form1
         'txtRatY
         '
         Me.txtRatY.Enabled = False
-        Me.txtRatY.Location = New System.Drawing.Point(190, 82)
+        Me.txtRatY.Location = New System.Drawing.Point(438, 75)
         Me.txtRatY.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtRatY.Name = "txtRatY"
         Me.txtRatY.Size = New System.Drawing.Size(148, 26)
@@ -284,7 +288,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(58, 85)
+        Me.Label5.Location = New System.Drawing.Point(306, 78)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(116, 20)
@@ -296,34 +300,12 @@ Partial Class Form1
         Me.GroupBox1.Controls.Add(Me.rdoLechita)
         Me.GroupBox1.Controls.Add(Me.rdoPelleta)
         Me.GroupBox1.Controls.Add(Me.rdoLiquor)
-        Me.GroupBox1.Location = New System.Drawing.Point(221, 181)
+        Me.GroupBox1.Location = New System.Drawing.Point(469, 174)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(200, 118)
         Me.GroupBox1.TabIndex = 43
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Delicia"
-        '
-        'rdoLiquor
-        '
-        Me.rdoLiquor.AutoSize = True
-        Me.rdoLiquor.Location = New System.Drawing.Point(7, 26)
-        Me.rdoLiquor.Name = "rdoLiquor"
-        Me.rdoLiquor.Size = New System.Drawing.Size(82, 24)
-        Me.rdoLiquor.TabIndex = 0
-        Me.rdoLiquor.TabStop = True
-        Me.rdoLiquor.Text = "Azulito"
-        Me.rdoLiquor.UseVisualStyleBackColor = True
-        '
-        'rdoPelleta
-        '
-        Me.rdoPelleta.AutoSize = True
-        Me.rdoPelleta.Location = New System.Drawing.Point(7, 54)
-        Me.rdoPelleta.Name = "rdoPelleta"
-        Me.rdoPelleta.Size = New System.Drawing.Size(82, 24)
-        Me.rdoPelleta.TabIndex = 1
-        Me.rdoPelleta.TabStop = True
-        Me.rdoPelleta.Text = "Pelleta"
-        Me.rdoPelleta.UseVisualStyleBackColor = True
         '
         'rdoLechita
         '
@@ -336,11 +318,85 @@ Partial Class Form1
         Me.rdoLechita.Text = "Lechita"
         Me.rdoLechita.UseVisualStyleBackColor = True
         '
+        'rdoPelleta
+        '
+        Me.rdoPelleta.AutoSize = True
+        Me.rdoPelleta.Location = New System.Drawing.Point(7, 54)
+        Me.rdoPelleta.Name = "rdoPelleta"
+        Me.rdoPelleta.Size = New System.Drawing.Size(82, 24)
+        Me.rdoPelleta.TabIndex = 1
+        Me.rdoPelleta.TabStop = True
+        Me.rdoPelleta.Text = "Pelleta"
+        Me.rdoPelleta.UseVisualStyleBackColor = True
+        '
+        'rdoLiquor
+        '
+        Me.rdoLiquor.AutoSize = True
+        Me.rdoLiquor.Location = New System.Drawing.Point(7, 26)
+        Me.rdoLiquor.Name = "rdoLiquor"
+        Me.rdoLiquor.Size = New System.Drawing.Size(82, 24)
+        Me.rdoLiquor.TabIndex = 0
+        Me.rdoLiquor.TabStop = True
+        Me.rdoLiquor.Text = "Azulito"
+        Me.rdoLiquor.UseVisualStyleBackColor = True
+        '
+        'rdoFase2RFIzq
+        '
+        Me.rdoFase2RFIzq.AutoSize = True
+        Me.rdoFase2RFIzq.Location = New System.Drawing.Point(13, 257)
+        Me.rdoFase2RFIzq.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.rdoFase2RFIzq.Name = "rdoFase2RFIzq"
+        Me.rdoFase2RFIzq.Size = New System.Drawing.Size(135, 24)
+        Me.rdoFase2RFIzq.TabIndex = 47
+        Me.rdoFase2RFIzq.TabStop = True
+        Me.rdoFase2RFIzq.Text = "Fase 2 RF Izq"
+        Me.rdoFase2RFIzq.UseVisualStyleBackColor = True
+        '
+        'rdoFase2RFDer
+        '
+        Me.rdoFase2RFDer.AutoSize = True
+        Me.rdoFase2RFDer.Location = New System.Drawing.Point(13, 223)
+        Me.rdoFase2RFDer.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.rdoFase2RFDer.Name = "rdoFase2RFDer"
+        Me.rdoFase2RFDer.Size = New System.Drawing.Size(139, 24)
+        Me.rdoFase2RFDer.TabIndex = 46
+        Me.rdoFase2RFDer.TabStop = True
+        Me.rdoFase2RFDer.Text = "Fase 2 RF Der"
+        Me.rdoFase2RFDer.UseVisualStyleBackColor = True
+        '
+        'rdoFase1RFDer
+        '
+        Me.rdoFase1RFDer.AutoSize = True
+        Me.rdoFase1RFDer.Location = New System.Drawing.Point(13, 189)
+        Me.rdoFase1RFDer.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.rdoFase1RFDer.Name = "rdoFase1RFDer"
+        Me.rdoFase1RFDer.Size = New System.Drawing.Size(139, 24)
+        Me.rdoFase1RFDer.TabIndex = 45
+        Me.rdoFase1RFDer.TabStop = True
+        Me.rdoFase1RFDer.Text = "Fase 1 RF Der"
+        Me.rdoFase1RFDer.UseVisualStyleBackColor = True
+        '
+        'rdoFase1RFIzq
+        '
+        Me.rdoFase1RFIzq.AutoSize = True
+        Me.rdoFase1RFIzq.Location = New System.Drawing.Point(13, 155)
+        Me.rdoFase1RFIzq.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.rdoFase1RFIzq.Name = "rdoFase1RFIzq"
+        Me.rdoFase1RFIzq.Size = New System.Drawing.Size(135, 24)
+        Me.rdoFase1RFIzq.TabIndex = 44
+        Me.rdoFase1RFIzq.TabStop = True
+        Me.rdoFase1RFIzq.Text = "Fase 1 RF Izq"
+        Me.rdoFase1RFIzq.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(900, 412)
+        Me.ClientSize = New System.Drawing.Size(1163, 412)
+        Me.Controls.Add(Me.rdoFase2RFIzq)
+        Me.Controls.Add(Me.rdoFase2RFDer)
+        Me.Controls.Add(Me.rdoFase1RFDer)
+        Me.Controls.Add(Me.rdoFase1RFIzq)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.txtRatY)
         Me.Controls.Add(Me.Label5)
@@ -402,4 +458,8 @@ Partial Class Form1
     Friend WithEvents rdoLiquor As RadioButton
     Friend WithEvents rdoPelleta As RadioButton
     Friend WithEvents rdoLechita As RadioButton
+    Friend WithEvents rdoFase2RFIzq As RadioButton
+    Friend WithEvents rdoFase2RFDer As RadioButton
+    Friend WithEvents rdoFase1RFDer As RadioButton
+    Friend WithEvents rdoFase1RFIzq As RadioButton
 End Class

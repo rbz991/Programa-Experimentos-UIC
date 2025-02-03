@@ -68,6 +68,38 @@ Public Class Form2
             ElseIf Form1.rdoFase2IVIzq.Checked = True Then
                 RegisterResponse(Lever)
                 If vRefReady = True And Lever = 4 Then Reinforce()
+
+
+            ElseIf Form1.rdoFase1RFDer.Checked = True Then
+                RegisterResponse(Lever)
+                RF_contador += 1
+                If RF_contador = RF_criterio And Lever = 1 Then
+                    RF_contador = 0
+                    Reinforce()
+                End If
+            ElseIf Form1.rdoFase1RFIzq.Checked = True Then
+                RegisterResponse(Lever)
+                RF_contador += 1
+                If RF_contador = RF_criterio And Lever = 2 Then
+                    RF_contador = 0
+                    Reinforce()
+                End If
+            ElseIf Form1.rdoFase2RFDer.Checked = True Then
+                RegisterResponse(Lever)
+                RF_contador += 1
+                If RF_contador = RF_criterio And Lever = 3 Then
+                    RF_contador = 0
+                    Reinforce()
+                End If
+            ElseIf Form1.rdoFase2RFIzq.Checked = True Then
+                RegisterResponse(Lever)
+                RF_contador += 1
+                If RF_contador = RF_criterio And Lever = 4 Then
+                    RF_contador = 0
+                    Reinforce()
+                End If
+
+
             ElseIf Form1.rdoFase2Lag.Checked = True Then
                 RegisterResponse(Lever)
                 If Lever = 3 Then
@@ -113,11 +145,34 @@ Public Class Form2
         ElseIf Form1.rdoFase2Yoked.Checked = True Then
 
         Else
-            VIGen(Form1.txbVIValue.Text)
-            If Form1.rdoFase1IVDer.Checked = True Then Arduino.WriteLine("A")
-            If Form1.rdoFase1IVIzq.Checked = True Then Arduino.WriteLine("B")
-            If Form1.rdoFase2IVDer.Checked = True Then Arduino.WriteLine("C")
-            If Form1.rdoFase2IVIzq.Checked = True Then Arduino.WriteLine("D")
+
+            If Form1.rdoFase1IVDer.Checked = True Then
+                Arduino.WriteLine("A")
+                VIGen(Form1.txbVIValue.Text)
+            End If
+            If Form1.rdoFase1IVIzq.Checked = True Then
+                Arduino.WriteLine("B")
+                VIGen(Form1.txbVIValue.Text)
+            End If
+            If Form1.rdoFase2IVDer.Checked = True Then
+                Arduino.WriteLine("C")
+                VIGen(Form1.txbVIValue.Text)
+            End If
+            If Form1.rdoFase2IVIzq.Checked = True Then
+                Arduino.WriteLine("D")
+                VIGen(Form1.txbVIValue.Text)
+            End If
+
+
+            If Form1.rdoFase1RFDer.Checked = True Or Form1.rdoFase1RFIzq.Checked = True Or Form1.rdoFase2RFDer.Checked = True Or Form1.rdoFase2RFIzq.Checked = True Then
+
+                RF_criterio = Form1.txbVIValue.Text
+
+            End If
+
+
+
+
         End If
     End Sub
     Private Sub Reinforce()
@@ -265,12 +320,17 @@ Public Class Form2
         tmrVI.Enabled = True
         VIList.RemoveAt(p)
     End Sub
+
+    Private Sub RFGen(v)
+
+    End Sub
+
     Public Sub Finish()
         Dim uniqueSec As Integer = lbxSecs.Items.Cast(Of String)().Distinct().Count()
         vUniqSec = uniqueSec
         Arduino.WriteLine("abcdt")
         vEndTime = vTimeNow / 1000
-        WriteLine(1, "Fase: " & vPhase)
+
         WriteLine(1, "IV: " & Form1.txbVIValue.Text)
         WriteLine(1, "Tasa de respuesta 1: " & vResponse(1) / (vEndTime / 60))
         WriteLine(1, "Tasa de respuesta 2: " & vResponse(2) / (vEndTime / 60))

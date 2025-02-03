@@ -12,10 +12,17 @@ Public Class Form1
     Dim stringReader As String
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+
+
+
         Comunication_Port_X = txtCOM.Text
         vFile = "C:\Data\" & txtRat.Text & "_" & txtSesion.Text & "_raw.txt"
         FileOpen(1, vFile, OpenMode.Append)
-
+        WriteLine(1, Format(Date.Now, "dd-MM-yyyy_hh-mm-ss"))
+        WriteLine(1, "Rat: " & txtRat.Text)
+        WriteLine(1, "Session: " & txtSesion.Text)
+        WriteLine(1, "Fase: " & vPhase)
 
         If rdoFase2Lag.Checked = True Then
             vFile2 = "C:\Data\" & txtRat.Text & "_" & txtSesion.Text & "_refs.txt"
@@ -62,4 +69,10 @@ Public Class Form1
             txtLag.Enabled = False
         End If
     End Sub
+
+    Private Sub rdo_CheckedChanged(sender As Object, e As EventArgs) Handles rdoPreentrenamiento.CheckedChanged, rdoFase1RFIzq.CheckedChanged, rdoFase1RFDer.CheckedChanged, rdoFase2RFDer.CheckedChanged, rdoFase2RFIzq.CheckedChanged, rdoFase1IVIzq.CheckedChanged, rdoFase1IVDer.CheckedChanged, rdoFase2IVDer.CheckedChanged, rdoFase2IVIzq.CheckedChanged, rdoFase3Ext.CheckedChanged
+        vPhase = sender.Text
+    End Sub
+
+
 End Class
