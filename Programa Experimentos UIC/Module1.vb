@@ -8,6 +8,7 @@ Module Module1
     Public DATOS_BRUTOS(4) As String
     Public Actual_Response(4) As Integer
     Public Previous_Response(4) As Integer
+    Public SessionDuration As Integer = 0
     Public vTimeStart As Integer = 0
     Public vTimeNow As Integer = 0
     Public vSecuencia As Integer = 0

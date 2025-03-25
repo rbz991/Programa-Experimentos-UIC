@@ -53,6 +53,8 @@ Partial Class Form1
         Me.rdoFase2RFDer = New System.Windows.Forms.RadioButton()
         Me.rdoFase1RFDer = New System.Windows.Forms.RadioButton()
         Me.rdoFase1RFIzq = New System.Windows.Forms.RadioButton()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txbDurSesion = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -258,7 +260,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(826, 118)
+        Me.Label4.Location = New System.Drawing.Point(959, 122)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(36, 20)
@@ -268,7 +270,7 @@ Partial Class Form1
         'txtLag
         '
         Me.txtLag.Enabled = False
-        Me.txtLag.Location = New System.Drawing.Point(869, 111)
+        Me.txtLag.Location = New System.Drawing.Point(1002, 115)
         Me.txtLag.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.txtLag.Name = "txtLag"
         Me.txtLag.Size = New System.Drawing.Size(148, 26)
@@ -388,11 +390,32 @@ Partial Class Form1
         Me.rdoFase1RFIzq.Text = "Fase 1 RF Izq"
         Me.rdoFase1RFIzq.UseVisualStyleBackColor = True
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(611, 75)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(88, 20)
+        Me.Label7.TabIndex = 49
+        Me.Label7.Text = "Dur Sesion"
+        '
+        'txbDurSesion
+        '
+        Me.txbDurSesion.Enabled = False
+        Me.txbDurSesion.Location = New System.Drawing.Point(707, 69)
+        Me.txbDurSesion.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
+        Me.txbDurSesion.Name = "txbDurSesion"
+        Me.txbDurSesion.Size = New System.Drawing.Size(148, 26)
+        Me.txbDurSesion.TabIndex = 48
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1163, 412)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.txbDurSesion)
         Me.Controls.Add(Me.rdoFase2RFIzq)
         Me.Controls.Add(Me.rdoFase2RFDer)
         Me.Controls.Add(Me.rdoFase1RFDer)
@@ -462,4 +485,6 @@ Partial Class Form1
     Friend WithEvents rdoFase2RFDer As RadioButton
     Friend WithEvents rdoFase1RFDer As RadioButton
     Friend WithEvents rdoFase1RFIzq As RadioButton
+    Friend WithEvents Label7 As Label
+    Friend WithEvents txbDurSesion As TextBox
 End Class

@@ -15,7 +15,7 @@ Public Class Form1
 
 
 
-
+        SessionDuration = txbDurSesion.Text * 60000
         Comunication_Port_X = txtCOM.Text
         vFile = "C:\Data\" & txtRat.Text & "_" & txtSesion.Text & "_raw.txt"
         FileOpen(1, vFile, OpenMode.Append)
