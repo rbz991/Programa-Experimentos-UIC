@@ -42,7 +42,7 @@ Public Class Form2
                 If tmrStart.Enabled = False Then
                     vTimeNow = Environment.TickCount - vTimeStart
                 End If
-                If vTimeNow >= 1800000 Or vReforzadores >= 50 Or vEnsayos >= 50 Then
+                If vTimeNow >= SessionDuration Or vReforzadores >= 50 Or vEnsayos >= 50 Then
                     Finish()
                 End If
             Catch ex As Exception
