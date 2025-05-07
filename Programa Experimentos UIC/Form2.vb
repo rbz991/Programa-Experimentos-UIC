@@ -51,6 +51,7 @@ Public Class Form2
         Loop
         Return 0
     End Function
+
     Private Sub Response(Lever As Integer)
         If tmrStart.Enabled = False Then
             If Form1.rdoPreentrenamiento.Checked = True Then

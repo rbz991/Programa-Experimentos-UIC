@@ -1,10 +1,14 @@
 ﻿
+Imports System.IO.Ports
+
 Public Class Form1
     Dim vFile
     Dim vFile2
     Dim vFile3
     Dim vFile4
     Dim vFile5
+    Dim vLeftL As Boolean = False
+    Dim vRightL As Boolean = False
     'Dim vFileSecuencias
     'Dim vFileJustSecuencias
     'Dim vFileEnsayos
@@ -12,7 +16,7 @@ Public Class Form1
     Dim stringReader As String
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+        Arduino.Close()
 
 
 
@@ -73,6 +77,36 @@ Public Class Form1
     Private Sub rdo_CheckedChanged(sender As Object, e As EventArgs) Handles rdoPreentrenamiento.CheckedChanged, rdoFase1RFIzq.CheckedChanged, rdoFase1RFDer.CheckedChanged, rdoFase2RFDer.CheckedChanged, rdoFase2RFIzq.CheckedChanged, rdoFase1IVIzq.CheckedChanged, rdoFase1IVDer.CheckedChanged, rdoFase2IVDer.CheckedChanged, rdoFase2IVIzq.CheckedChanged, rdoFase3Ext.CheckedChanged
         vPhase = sender.Text
     End Sub
+
+    Private Sub btnLeftLever_Click(sender As Object, e As EventArgs) Handles btnLeftLever.Click
+        If vLeftL = False Then
+            vLeftL = True
+            Arduino.WriteLine("L")
+        Else
+            vLeftL = False
+            Arduino.WriteLine("l")
+        End If
+    End Sub
+
+    Private Sub btnRightLever_Click(sender As Object, e As EventArgs) Handles btnRightLever.Click
+        If vRightL = False Then
+            vRightL = True
+            Arduino.WriteLine("M")
+        Else
+            vRightL = False
+            Arduino.WriteLine("m")
+        End If
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnConect.Click
+        Comunication_Port_X = txtCOM.Text
+        btnConect.Enabled = False
+        btnLeftLever.Enabled = True
+        btnRightLever.Enabled = True
+        Arduino = New SerialPort(Comunication_Port_X, 9600)
+        Arduino.Open()
+    End Sub
+
 
 
 End Class
