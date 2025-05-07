@@ -7,8 +7,8 @@ Public Class Form1
     Dim vFile3
     Dim vFile4
     Dim vFile5
-    Dim vLeftL As Boolean = False
-    Dim vRightL As Boolean = False
+    Dim vLeftL As Boolean = True
+    Dim vRightL As Boolean = True
     'Dim vFileSecuencias
     'Dim vFileJustSecuencias
     'Dim vFileEnsayos
@@ -99,12 +99,20 @@ Public Class Form1
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnConect.Click
-        Comunication_Port_X = txtCOM.Text
-        btnConect.Enabled = False
-        btnLeftLever.Enabled = True
-        btnRightLever.Enabled = True
-        Arduino = New SerialPort(Comunication_Port_X, 9600)
-        Arduino.Open()
+
+
+        Try
+            Comunication_Port_X = txtCOM.Text
+            Arduino = New SerialPort(Comunication_Port_X, 9600)
+            Arduino.Open()
+            btnConect.Enabled = False
+            Button1.Enabled = True
+            btnLeftLever.Enabled = True
+            btnRightLever.Enabled = True
+        Catch ex As Exception
+            MessageBox.Show("Check COM Port is available.")
+        End Try
+
     End Sub
 
 

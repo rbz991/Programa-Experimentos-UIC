@@ -280,9 +280,9 @@ Partial Class Form2
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Programa_Experimentos_UIC.My.Resources.Resources._5OIW
-        Me.PictureBox1.Location = New System.Drawing.Point(36, 49)
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(373, 302)
+        Me.PictureBox1.Size = New System.Drawing.Size(449, 282)
         Me.PictureBox1.TabIndex = 19
         Me.PictureBox1.TabStop = False
         '

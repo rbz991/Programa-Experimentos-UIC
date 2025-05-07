@@ -65,6 +65,7 @@ Partial Class Form1
         '
         'Button1
         '
+        Me.Button1.Enabled = False
         Me.Button1.Location = New System.Drawing.Point(927, 338)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.Button1.Name = "Button1"
@@ -412,7 +413,6 @@ Partial Class Form1
         '
         'txbDurSesion
         '
-        Me.txbDurSesion.Enabled = False
         Me.txbDurSesion.Location = New System.Drawing.Point(943, 86)
         Me.txbDurSesion.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.txbDurSesion.Name = "txbDurSesion"
@@ -431,6 +431,7 @@ Partial Class Form1
         '
         'btnLeftLever
         '
+        Me.btnLeftLever.Enabled = False
         Me.btnLeftLever.Location = New System.Drawing.Point(8, 24)
         Me.btnLeftLever.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.btnLeftLever.Name = "btnLeftLever"
@@ -441,6 +442,7 @@ Partial Class Form1
         '
         'btnRightLever
         '
+        Me.btnRightLever.Enabled = False
         Me.btnRightLever.Location = New System.Drawing.Point(8, 82)
         Me.btnRightLever.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.btnRightLever.Name = "btnRightLever"
@@ -466,7 +468,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1551, 515)
+        Me.ClientSize = New System.Drawing.Size(1739, 515)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.btnConect)
         Me.Controls.Add(Me.Label7)
