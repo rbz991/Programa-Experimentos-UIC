@@ -68,7 +68,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Enabled = False
-        Me.Button1.Location = New System.Drawing.Point(927, 338)
+        Me.Button1.Location = New System.Drawing.Point(479, 376)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(413, 115)
@@ -98,7 +98,7 @@ Partial Class Form1
         'Secuencia
         '
         Me.Secuencia.AutoSize = True
-        Me.Secuencia.Location = New System.Drawing.Point(1280, 49)
+        Me.Secuencia.Location = New System.Drawing.Point(918, 236)
         Me.Secuencia.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Secuencia.Name = "Secuencia"
         Me.Secuencia.Size = New System.Drawing.Size(113, 25)
@@ -107,10 +107,10 @@ Partial Class Form1
         '
         'txtValorSecuencia
         '
-        Me.txtValorSecuencia.Location = New System.Drawing.Point(1405, 48)
+        Me.txtValorSecuencia.Location = New System.Drawing.Point(1054, 236)
         Me.txtValorSecuencia.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.txtValorSecuencia.Name = "txtValorSecuencia"
-        Me.txtValorSecuencia.Size = New System.Drawing.Size(84, 31)
+        Me.txtValorSecuencia.Size = New System.Drawing.Size(118, 31)
         Me.txtValorSecuencia.TabIndex = 26
         Me.txtValorSecuencia.Text = "4"
         '
@@ -140,25 +140,25 @@ Partial Class Form1
         '
         'txtSesion
         '
-        Me.txtSesion.Location = New System.Drawing.Point(904, 48)
+        Me.txtSesion.Location = New System.Drawing.Point(863, 18)
         Me.txtSesion.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.txtSesion.Name = "txtSesion"
-        Me.txtSesion.Size = New System.Drawing.Size(113, 31)
+        Me.txtSesion.Size = New System.Drawing.Size(168, 31)
         Me.txtSesion.TabIndex = 23
         '
         'txtRat
         '
-        Me.txtRat.Location = New System.Drawing.Point(544, 48)
+        Me.txtRat.Location = New System.Drawing.Point(501, 15)
         Me.txtRat.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.txtRat.Name = "txtRat"
-        Me.txtRat.Size = New System.Drawing.Size(196, 31)
+        Me.txtRat.Size = New System.Drawing.Size(193, 31)
         Me.txtRat.TabIndex = 22
         Me.txtRat.Text = "R"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(815, 49)
+        Me.Label2.Location = New System.Drawing.Point(775, 21)
         Me.Label2.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(78, 25)
@@ -168,7 +168,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(381, 51)
+        Me.Label1.Location = New System.Drawing.Point(338, 18)
         Me.Label1.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(150, 25)
@@ -177,16 +177,16 @@ Partial Class Form1
         '
         'txbVIValue
         '
-        Me.txbVIValue.Location = New System.Drawing.Point(775, 144)
+        Me.txbVIValue.Location = New System.Drawing.Point(502, 107)
         Me.txbVIValue.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.txbVIValue.Name = "txbVIValue"
-        Me.txbVIValue.Size = New System.Drawing.Size(196, 31)
+        Me.txbVIValue.Size = New System.Drawing.Size(192, 31)
         Me.txbVIValue.TabIndex = 30
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(640, 151)
+        Me.Label3.Location = New System.Drawing.Point(367, 114)
         Me.Label3.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(121, 25)
@@ -268,7 +268,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(1279, 152)
+        Me.Label4.Location = New System.Drawing.Point(918, 283)
         Me.Label4.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(48, 25)
@@ -278,17 +278,17 @@ Partial Class Form1
         'txtLag
         '
         Me.txtLag.Enabled = False
-        Me.txtLag.Location = New System.Drawing.Point(1336, 144)
+        Me.txtLag.Location = New System.Drawing.Point(1054, 280)
         Me.txtLag.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.txtLag.Name = "txtLag"
-        Me.txtLag.Size = New System.Drawing.Size(196, 31)
+        Me.txtLag.Size = New System.Drawing.Size(118, 31)
         Me.txtLag.TabIndex = 38
         Me.txtLag.Text = "8"
         '
         'txtRatY
         '
         Me.txtRatY.Enabled = False
-        Me.txtRatY.Location = New System.Drawing.Point(584, 94)
+        Me.txtRatY.Location = New System.Drawing.Point(498, 61)
         Me.txtRatY.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.txtRatY.Name = "txtRatY"
         Me.txtRatY.Size = New System.Drawing.Size(196, 31)
@@ -298,7 +298,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(408, 98)
+        Me.Label5.Location = New System.Drawing.Point(333, 64)
         Me.Label5.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(155, 25)
@@ -406,7 +406,7 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(815, 94)
+        Me.Label7.Location = New System.Drawing.Point(735, 66)
         Me.Label7.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(118, 25)
@@ -415,10 +415,10 @@ Partial Class Form1
         '
         'txbDurSesion
         '
-        Me.txbDurSesion.Location = New System.Drawing.Point(943, 86)
+        Me.txbDurSesion.Location = New System.Drawing.Point(863, 63)
         Me.txbDurSesion.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.txbDurSesion.Name = "txbDurSesion"
-        Me.txbDurSesion.Size = New System.Drawing.Size(196, 31)
+        Me.txbDurSesion.Size = New System.Drawing.Size(168, 31)
         Me.txbDurSesion.TabIndex = 48
         '
         'btnConect
@@ -469,7 +469,7 @@ Partial Class Form1
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(1180, 94)
+        Me.Label8.Location = New System.Drawing.Point(700, 114)
         Me.Label8.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(153, 25)
@@ -478,17 +478,17 @@ Partial Class Form1
         '
         'txbCritRefs
         '
-        Me.txbCritRefs.Location = New System.Drawing.Point(1336, 86)
+        Me.txbCritRefs.Location = New System.Drawing.Point(863, 111)
         Me.txbCritRefs.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
         Me.txbCritRefs.Name = "txbCritRefs"
-        Me.txbCritRefs.Size = New System.Drawing.Size(196, 31)
+        Me.txbCritRefs.Size = New System.Drawing.Size(168, 31)
         Me.txbCritRefs.TabIndex = 54
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1739, 515)
+        Me.ClientSize = New System.Drawing.Size(1190, 515)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.txbCritRefs)
         Me.Controls.Add(Me.GroupBox2)
