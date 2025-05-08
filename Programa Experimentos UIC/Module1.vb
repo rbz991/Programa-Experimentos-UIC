@@ -30,4 +30,5 @@ Module Module1
     Public vUniqSec As Integer = 0
     Public RF_criterio As Integer = 0
     Public RF_contador(4) As Integer
+    Public criterioReforzadores As Integer = 0
 End Module

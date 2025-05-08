@@ -59,6 +59,8 @@ Partial Class Form1
         Me.btnLeftLever = New System.Windows.Forms.Button()
         Me.btnRightLever = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txbCritRefs = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -464,11 +466,31 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Palantuki"
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(1180, 94)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(5, 0, 5, 0)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(153, 25)
+        Me.Label8.TabIndex = 55
+        Me.Label8.Text = "Refs a obtener"
+        '
+        'txbCritRefs
+        '
+        Me.txbCritRefs.Location = New System.Drawing.Point(1336, 86)
+        Me.txbCritRefs.Margin = New System.Windows.Forms.Padding(5, 6, 5, 6)
+        Me.txbCritRefs.Name = "txbCritRefs"
+        Me.txbCritRefs.Size = New System.Drawing.Size(196, 31)
+        Me.txbCritRefs.TabIndex = 54
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1739, 515)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.txbCritRefs)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.btnConect)
         Me.Controls.Add(Me.Label7)
@@ -549,4 +571,6 @@ Partial Class Form1
     Friend WithEvents btnLeftLever As Button
     Friend WithEvents btnRightLever As Button
     Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents txbCritRefs As TextBox
 End Class

@@ -18,6 +18,9 @@ Public Class Form1
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Arduino.Close()
 
+        If txbCritRefs.Text <> "" Then
+            criterioReforzadores = txbCritRefs.Text
+        End If
 
         SessionDuration = txbDurSesion.Text * 60000
         Comunication_Port_X = txtCOM.Text
